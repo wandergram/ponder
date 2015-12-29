@@ -34,21 +34,18 @@ nav {
   margin: 0 auto;
   width: 100%;
   .box {
-	  margin: 10px;
-	  width: 350px;
+	  margin: 5px;
+	  width: 200px;
 	  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
 	  border-radius: 7px;
 	  text-align: center;
-	  img {
-	  	max-width: 100%;
-	  	height: auto;
-	  }
+
 	  h2 {
 	  	font-size: 22px;
 	  	margin: 0;
 	  	padding: 25px 10px;
 	  	a {
-				color: #474747;
+				color: #1986BD;
 	  	}
 	  }
 	  .user {
@@ -70,11 +67,14 @@ nav {
 }
 
 #pin_show {
-	a {
-	  font-weight: bold;
-	  text-decoration: none;
-	  font-size: 1.1em;
+	.panel-body{
+		a {
+	  		font-weight: bold;
+	  		text-decoration: none;
+	  		font-size: 1.4em;
 	}
+	}
+
 
 	.panel-heading {
 		padding: 0;
