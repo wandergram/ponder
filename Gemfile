@@ -20,6 +20,7 @@ gem 'masonry-rails', '~> 0.2.4'
 gem 'shareable'
 gem 'social-share-button', '~> 0.1.6'
 gem 'awesome-share-buttons', github: 'evansobkowicz/awesome-share-buttons'
+gem 'high_voltage', '~> 2.4.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
