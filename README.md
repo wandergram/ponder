@@ -6,5 +6,6 @@
 * Includes social media sharing buttons through the [Social Share Button gem](https://github.com/huacnlee/social-share-button)
 * Social media sharing buttons from [Pauline Cabrera @ TwelveSkip](http://www.twelveskip.com/resources/icons/1091/boxxed-flat-social-media-icons) and [Lee Gargano on Dribbble](https://dribbble.com/shots/1427054-Flat-Minimalistic-Social-Icons)
 * Static pages created with [HighVoltage gem](https://github.com/thoughtbot/high_voltage)
+* Now includes custom tagging with [Acts As Taggable On gem](https://github.com/mbleigh/acts-as-taggable-on)
 
 
