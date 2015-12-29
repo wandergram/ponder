@@ -1,4 +1,6 @@
 %h1 My pins
-
-- @pins.each do |pin|
-	%h2= link_to pin.title, pin
+#pins.transitions-enabled
+	- @pins.each do |pin|
+		.box.panel.panel-default
+			.panel-body
+				%h2= link_to pin.title, pin
