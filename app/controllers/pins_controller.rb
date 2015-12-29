@@ -6,7 +6,11 @@ class PinsController < ApplicationController
 	# no one but the user can see the user's pins
 
 	def index
-		@pins = current_user.pins.order "created_at DESC" 
+		if params[:tag]
+			@pins = current_user.pins.tagged_with(params[:tag]).order "created_at DESC"
+		else
+			@pins = current_user.pins.order "created_at DESC" 
+		end
 	end
 
 	def show
@@ -46,10 +50,11 @@ class PinsController < ApplicationController
 	private
 
 	def pin_params
-		params.require(:pin).permit(:title, :description, :address)
+		params.require(:pin).permit(:title, :description, :address, :tag_list)
 	end
 
 	def find_pin
 		@pin = Pin.find(params[:id])
 	end
+
 end

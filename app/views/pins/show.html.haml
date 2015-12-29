@@ -6,6 +6,8 @@
 				%h1= @pin.title
 				%p.address= link_to @pin.address, @pin.address, :target => "_blank"
 				%p.description= @pin.description
+				%span.p Tags:
+				%small.tag_list= raw @pin.tag_list.map { |t| link_to t, tag_path(t) }.join(', ')
 				%p 
 				
 			.panel-footer

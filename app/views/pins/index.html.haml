@@ -1,9 +1,25 @@
-.col-md-6.col-md-offset-3
-	%h3 Hi there! Here's all the stuff you've pinned. 
-.col-md-12	
+.col-md-9
+	%h3 Hi there! Here's all the stuff you've pinned.
+	%span.h5 Not seeing anything? 
+	%strong= link_to "Add a pin to get started.", new_pin_path
+	%br
+	%br 
 	#pins.transitions-enabled
 		- @pins.each do |pin|
 			.box.panel.panel-default
 				.panel-body
 					%h2= link_to pin.title, pin
+
+.col-md-3	
+	%h3 Your tags
+	%h5 If you've added tags to your pins, they'll show up here. 
+	%h5 Click on any tag to filter your pins.
+	%strong= link_to "Clear filters and see all pins?", root_path
+	%br 
+	%br
+	#tag_cloud
+		- tag_cloud current_user.pins.tag_counts, %w[s] do |tag, css_class|
+			= link_to tag.name, tag_path(tag.name), class: 'btn btn-info'
+
+	
 

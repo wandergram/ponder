@@ -12,7 +12,10 @@
 		= f.input :title, input_html: { class: 'form-control' }
 
 	.form-group
-		= f.input :address, input_html: { class: 'form-control' }
+		= f.input :address, label: 'Website URL', input_html: { class: 'form-control' }
+
+	.form-group
+		= f.input :tag_list, label: 'Tags (separated by commas, optional)', input_html: { class: 'form-control' }
 
 	.form-group
 		= f.input :description, input_html: { class: 'form-control' }

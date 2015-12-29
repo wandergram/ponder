@@ -26,6 +26,8 @@ gem 'social-share-button', '~> 0.1.6'
 gem 'awesome-share-buttons', github: 'evansobkowicz/awesome-share-buttons'
 gem 'high_voltage', '~> 2.4.0'
 
+gem 'acts-as-taggable-on', '~> 3.4'
+
 ruby "2.1.2"
 
 # Use ActiveModel has_secure_password
