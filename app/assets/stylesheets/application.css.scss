@@ -1,5 +1,8 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
+/*
+*= require 'masonry/transitions'
+*= require_tree .
+*= require_self
+*/
 
 @import "bootstrap-sprockets";
 @import "bootstrap";

@@ -4,9 +4,8 @@
 			
 			.panel-body
 				%h1= @pin.title
+				%p.address= link_to @pin.address, @pin.address, :target => "_blank"
 				%p.description= @pin.description
-				%p.address= link_to @pin.address, :target => "_blank"
-				%br 
 				%p 
 				
 			.panel-footer
@@ -17,7 +16,7 @@
 						.btn-group.pull-right
 
 							= link_to "Edit", edit_pin_path, class: "btn btn-default"
-							= link_to "Delete", pin_path, method: :delete, class: "btn btn-default"
+							= link_to "Delete", pin_path, method: :delete, class: "btn btn-danger" # data: { confrim: "Are you sure?" }
 
 
 
