@@ -1,10 +1,12 @@
 class PinsController < ApplicationController
 	before_action :authenticate_user!
 	before_action :find_pin, only: [:show, :edit, :update, :destroy]
-	#before_action :correct_user, only: [:edit, :update, :destroy]
+
+	# tweaked the index method to ensure all pins private by default
+	# no one but the user can see the user's pins
 
 	def index
-		@pins = current_user.pins.order "created_at DESC"
+		@pins = current_user.pins.order "created_at DESC" 
 	end
 
 	def show
