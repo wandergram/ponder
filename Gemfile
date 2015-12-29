@@ -2,7 +2,10 @@ source 'https://rubygems.org'
 
 
 gem 'rails', '4.1.1'
-gem 'sqlite3'
+
+
+gem 'pg'
+
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
@@ -21,6 +24,8 @@ gem 'shareable'
 gem 'social-share-button', '~> 0.1.6'
 gem 'awesome-share-buttons', github: 'evansobkowicz/awesome-share-buttons'
 gem 'high_voltage', '~> 2.4.0'
+
+ruby "2.1.2"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
