@@ -1,11 +1,14 @@
 class PinsController < ApplicationController
+	before_action :authenticate_user!
 	before_action :find_pin, only: [:show, :edit, :update, :destroy]
+	#before_action :correct_user, only: [:edit, :update, :destroy]
 
 	def index
-		@pins = Pin.all.order("created_at DESC")
+		@pins = current_user.pins.order "created_at DESC"
 	end
 
 	def show
+		@pin = current_user.pins.find params[:id]
 	end
 
 	def new
