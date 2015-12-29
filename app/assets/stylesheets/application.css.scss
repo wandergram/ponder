@@ -1,5 +1,7 @@
 /*
 *= require 'masonry/transitions'
+*= require social-share-button
+*= require awesome-share-buttons
 *= require_tree .
 *= require_self
 */
@@ -106,6 +108,7 @@ nav {
 			padding-top: 8px;
 		}
 	}
+
 }
 
 textarea {

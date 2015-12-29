@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/evansobkowicz/awesome-share-buttons.git
+  revision: eadb9ba540732e4db156ead649dcb662f41e105a
+  specs:
+    awesome-share-buttons (1.1)
+      coffee-rails
+      sass-rails
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -107,6 +115,9 @@ GEM
     simple_form (3.2.1)
       actionpack (> 4, < 5.1)
       activemodel (> 4, < 5.1)
+    social-share-button (0.1.10)
+      coffee-rails
+      sass-rails
     spring (1.6.1)
     sprockets (2.12.4)
       hike (~> 1.2)
@@ -138,6 +149,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome-share-buttons!
   bootstrap-sass (~> 3.2.0)
   coffee-rails (~> 4.0.0)
   devise (~> 3.5, >= 3.5.3)
@@ -150,6 +162,7 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   shareable
   simple_form (~> 3.2, >= 3.2.1)
+  social-share-button (~> 0.1.6)
   spring
   sqlite3
   turbolinks

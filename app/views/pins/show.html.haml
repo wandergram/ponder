@@ -12,12 +12,13 @@
 				.row
 					.col-md-6
 						%p.user
+						= social_share_button_tag("Check this out:", :url => @pin.address)
 					.col-md-6
+						
 						.btn-group.pull-right
 
 							= link_to "Edit", edit_pin_path, class: "btn btn-default"
 							= link_to "Delete", pin_path, method: :delete, class: "btn btn-danger" # data: { confrim: "Are you sure?" }
-
 
 
 
